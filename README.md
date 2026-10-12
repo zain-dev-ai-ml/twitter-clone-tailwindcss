@@ -66,44 +66,49 @@ If these commands display version numbers, the required tools are available.
 
 Follow these steps to download and run the project on your computer.
 
-### Step 1: Clone the repository
+### Step 1: Download this project as zip file from this repo
 
-Open your terminal or VS Code terminal and run:
-
-```bash
-git clone https://github.com/YOUR-USERNAME/twitter-clone-tailwindcss.git
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-Alternatively, open the repository on GitHub, select **Code → Download ZIP**, and extract the ZIP file.
 
 ### Step 2: Open the project folder
 
-Navigate into the project directory:
+Unzip the downloaded folder and right click on it and select openWithCode Option
+then the folder will be open in Vs Code
 
-```bash
-cd twitter-clone-tailwindcss
+
+### Step 3: install Node Js Modules Packages 
+open terminal in Vs Code and type
+```
+npm init -y
+```
+by typing this 
+after that the node modules folder and package.json file will be download 
+
+### Step 4: How to setup Tailwind CSS
+
+Step 1: Run the following commands
+
+``` 
+npm install -D tailwindcss
+npx tailwindcss init
 ```
 
-If you downloaded the ZIP file, open the extracted folder in Visual Studio Code.
-
-### Step 3: Install dependencies
-
-Run the following command from the project root:
-
-```bash
-npm install
+Step 2: Update tailwind.conf.js file to include this line:
+```
+content: ["*.html"],
 ```
 
-This installs the dependencies listed in `package.json`, including Tailwind CSS and Vite.
+Step 3: create src/input.css to include:
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-### Step 4: Generate the Tailwind CSS file
+Step 4: Include the src/output.css file to your html
 
-Run:
-
-```bash
-npm run build
+Step 5: Run the following command:
+```
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
 The configured build script generates `css/output.css` from `css/input.css` and watches for changes.
