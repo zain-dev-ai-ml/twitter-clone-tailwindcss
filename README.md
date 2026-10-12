@@ -26,26 +26,6 @@ Built as a hands-on frontend development project to practice responsive layouts,
 - Vite
 - Google Material Symbols
 
-## 📁 Project Structure
-
-```text
-twitter-clone-tailwindcss/
-│
-├── index.html
-│
-├── css/
-│   ├── input.css
-│   └── output.css
-│
-├── images/
-│   └── favicon.ico
-│
-├── package.json
-├── package-lock.json
-├── tailwind.config.js
-├── .gitignore
-└── README.md
-```
 
 **File descriptions:**
 
