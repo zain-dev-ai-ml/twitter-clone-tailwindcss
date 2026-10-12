@@ -4,6 +4,9 @@ A responsive frontend clone of the Twitter/X user interface, built using **HTML5
 
 Built as a hands-on frontend development project to practice responsive layouts, utility-first CSS, and modern web UI design.
 
+## 📸 Preview
+![X Twitter Clone - Social Website](images/Preview.png)
+
 ## ✨ Features
 
 - **Dark Theme:** Black background with white text and subtle borders.
